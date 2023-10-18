@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rye&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Pacifico&family=Rye&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    text-decoration:none;
+}
+
+:root{
+    --pink: #e79ea7;
+    --green:#d7fecf;
+    --blue:#90c6b9;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth
+    ;
+}
+.container{
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -100;
+    right: 0;
+
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    z-index: 100000;
+    background:black;
+    color: blue;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+}
+
+@media (min_aspect-ratio:16/9){
+    .video{
+        width: 100;
+        height: auto;
+    }
+}
+@media (max_aspect-ratio:16/9){
+    .video{
+        width: auto;
+        height: 100;
+    }
+}
+
+.header h2{
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    font-size: 2rem;
+    background-color: black;
+    background: #E79EA7;
+background: radial-gradient(circle farthest-corner at center center, #E79EA7 0%, #90C6B9 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    
+}
+
+span{
+    background-color: #e79ea7;
+background: radial-gradient(circle farthest-corner at center center, #E79EA7 50%, #90C6B9 50%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.header a{
+    color: white;
+    font-size: 2rem;
+    padding-left: 0;
+    font-family: 'Rye', serif;
+}
+
+.logo{
+    display: flex;
+    justify-self: space-around;
+    align-items: center;
+}
+
+.maintext{
+    width: 100%;
+    height: 95vh;
+    background:transparent;
+    position: absolute;
+    top: 8%;
+    right: 0;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.leftside{
+    width: 35%;
+    height:100%;
+    background:transparent;
+    display: flex;
+    font-family: 'Pacifico', cursive;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    padding: 1rem;
+}
+
+.first{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    height: 30%;
+    font-size: 3.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.rightside{
+    width: 65%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:transparent;
+}
+
+.icons{
+    padding-right: 2rem;
+}
+
+.rightside img{
+    width: 90%;
+    height: 70%;
+}
+
+.second{
+    width: 80%;
+    height: 10%;
+    background: white;
+    color: black;
+    text-align: center;
+    border-radius: 2rem;
+    font-family: 'Cormorant SC', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+
+}
+
+button{
+    width: 60%;
+    height: 4rem;
+    border-radius: 2rem;
+    background: black;
+    color: var(--pink);
+    border: 2px solid white;
+    font-family: "pacifico",cursive;
+    font-size: 2rem;
+}
+
+button:hover{
+    word-spacing: 0.5rem;
+    font-size: 2.2rem;
+    cursor: pointer;
+    padding-left: 1rem;
+
+}
+
+.container2{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.heading{
+    color: white;
+    font-size: 4rem;
+    padding-top: 4rem;
+    text-align: center;
+    font-family: "pacifico",cursive;
+}
+
+.undreline{
+    background: white;
+    height: 0.5rem;
+    width: 35%;
+    position: relative;
+    top: 0%;
+    border-radius: 2rem;
+    left: 33%;
+}
+
+.mens{
+    width: 100%;
+    height: auto;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.products{
+    width: 30rem;
+    height: 45rem;
+    background: transparent;
+    color: white;
+    display: flex;
+    margin: 4rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.top{
+    width: 100%;
+    height: 60%;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top img{
+    width: 100%;
+    height: 100%;
+}
+
+.bottom{
+    width: 100%;
+    height: 45%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.bottom h2{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.bottm h3{
+    font-size: 2.5rem;
+    color: var(--green);
+}
+
+.products button{
+    width: 70%;
+    margin-bottom: 1rem;
+    font-family: "Oleo Script Swash Caps",cursive;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 5,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.container3{
+    width: 100%;
+    height: auto;
+    background: white;
+
+}
+
+.container3 .heading{
+    color: black;
+}
+
+.container3 .undreline{
+    background: black;
+}
+
+.container3 .bottom h2{
+    color: black;
+}
+
+.container3 .bottom h3{
+    color: rgb(0,218, 0);
+}
+
+.container3 .Womens{
+    background-color: black;
+}
+
+.container4{
+    background: black;
+    color: white;
+    width: 100%;
+}
+
+.container5{
+    background: white;
+    color: black;
+    left: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+
+}
+
+.container5 .heading{
+    color: black;
+}
+
+.container5.undreline{
+    color: black;
+}
+
+
+
+.offers2{
+    background: black;
+    width: 85%;
+    margin-top: 3rem;
+    height: 70rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.head{
+    color: white;
+    text-decoration: underline;
+}
+
+.parts{
+    width: 40rem;
+    margin: 1.5rem;
+    height: 30rem;
+    background: black;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.parts img{
+    width: 60%;
+    height: 60%;
+}
+
+.parts h1{
+    font-size: 3rem;
+}
+
+.parts p{
+    font-size: 2rem;
+}
+
+.parts button{
+    font-size: 3rem;
+    font-family: 'Cookie', cursive;
+}
+
+.footer{
+    width: 100%;
+    height: 65vh;
+    background: white;
+}
+
+.upper{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lower{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: black;
+    border-top: 4px solid black;
+}
+
+.lower h2{
+    margin-right: 1.5rem;
+}
+
+.images{
+    width: 50%;
+    text-align: center;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images img{
+    width: 18%;
+    height: 45%;
+    margin: 1rem;
+
+}
+
+#b{
+    width: 25%;
+    height: 50%;
+    background:transparent;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.iconsfooter{
+    width: 100%;
+    height: 50%;
+    background:transparent;
+    color: black;
+}
+
+.input{
+    width: 95%;
+    height: 20%;
+    border-radius: 2rem;
+    border: 2px solid white;
+    color:black;
+    font-size: 2rem;
+    padding: 2rem;
+
+}
+
+.searchbar{
+    width: 30rem;
+    height: 5rem;
+    background: white;
+    color: black;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    border: 2px solid black;
+    padding: 1rem;
+    top: 10%;
+    right: -95%;
+    z-index: 1000000;
+}
+
+.searchbar.active{
+    right: 5%;
+}
+
+.searchbar h1{
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+.favorite{
+    width: 25rem;
+    height: 15rem;
+    background: black;
+    color: var(--pink);
+    font-size: 1rem;
+    line-height: 2rem;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 10%;
+    right: -95%;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.favorite.active{
+    right: 5%;
+}
+
+.checkout{
+    width: 40rem;
+    height: 30rem;
+    background: white;
+    border: 2px solid white;
+    border-radius: 2rem;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    top: 10%;
+    right: -95%;
+}
+
+.checkbox{
+    width: 90%;
+    height: 20%;
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+    border: 2px solid black;
+    padding: 3rem;
+}
+
+.checkbox h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.checkbox p{
+    font-size: 2rem;
+}
+
+.checkbox img{
+    width: 15%;
+    height: 100%;
+}
+
+.checkout.active{
+    right: 5%;
+}
+
+.login{
+    width: 30rem;
+    height: 30rem;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 10%;
+    right: -95%;
+}
+
+#username{
+    width: 90%;
+    height: 20%;
+    background: black;
+    color: white;
+    padding: 2rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    font-size: 2rem;
+}
+
+#password{
+    width: 90%;
+    height: 20%;
+    background: black;
+    color: white;
+    padding: 2rem;
+    font-size: 2rem;
+    border: 2ox solid white;
+    border-radius: 2rem;
+}
+
+.login a{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    word-spacing: 0.6rem;
+}
+
+.login.active{
+    right: 5%;
+}
